@@ -72,12 +72,6 @@ void berhenti() {
 
 void setup() {  
   ps5.begin("48:18:8D:8F:B1:DE "); // Alamat MAC ESP32 untuk Pair PS5 Controller
-  // Tunggu hingga controller tersambung
-  while (!ps5.isConnected()) {
-    Serial.println("mana ya PS5 nya...");
-    delay(500);
-  }
-  Serial.println("PS5 siap!");
   // Set pin motor sebagai output
   pinMode(enA, OUTPUT);
   pinMode(kPin1, OUTPUT);
