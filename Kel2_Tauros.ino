@@ -141,14 +141,14 @@ void loop() {
   }
 
   // Kendali robot berdasarkan tombol d-pad PS5
-  if (ps5.Up()){
-    maju();     // Tombol atas → maju
-  } else if (ps5.Down()){
-    mundur();     // Tombol bawah → mundur
+  if (ps5.Up()||ps5.Triangle()){
+    maju();     // Tombol atas kiri atau tombol atas kanan (Segitiga) → maju
+  } else if (ps5.Down()||ps5.Cross()){
+    mundur();     // Tombol bawah kiri atau tombol bawah kanan (X) → mundur
   } else if (ps5.Left()){
     belKir();       // Tombol kiri → kiri
-  } else if (ps5.Right()) {
-    belKan();     // Tombol kanan → kanan
+  } else if (ps5.Circle()) {
+    belKan();     // Tombol kanan (lingkaran o) → kanan
   } else {
     berhenti();   // Tidak ada input → berhenti
   }
