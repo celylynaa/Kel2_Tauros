@@ -11,15 +11,15 @@
 // Variabel untuk mencatat waktu terakhir update data PS5
 unsigned long lastTimeStamp = 0;
 
-// --- Konfigurasi pin motor kiri ---
-int enA = 25; // pin enable (PWM) untuk motor kiri (driver motor1)
-int kPin1 = 16; // pin arah 1 motor kiri
-int kPin2 = 17; // pin arah 2 motor kiri
-
 // --- Konfigurasi pin motor kanan ---
-int enB = 23; // pin enable (PWM) untuk motor kanan (driver motor2)
-int krPin1 = 18; // pin arah 1 motor kanan
-int krPin2 = 19; // pin arah 2 motor kanan
+int enA = 25; // pin enable (PWM) untuk motor kanan (driver motor1)
+int kPin1 = 16; // pin arah 1 motor kanan
+int kPin2 = 17; // pin arah 2 motor kanan
+
+// --- Konfigurasi pin motor kiri ---
+int enB = 23; // pin enable (PWM) untuk motor kiri (driver motor2)
+int krPin1 = 18; // pin arah 1 motor kiri
+int krPin2 = 19; // pin arah 2 motor kiri
 
 // --- Konfigurasi PWM ---
 const int PWMFreq = 1000;               // frekuensi PWM = 1 kHz
